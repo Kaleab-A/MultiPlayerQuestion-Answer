@@ -140,7 +140,7 @@ try {
       req.onreadystatechange = function () {
         if (req.readyState == 4 && req.status == 200) {
           questions = JSON.parse(req.responseText);
-          let val = findMatch("userInfo", String(category));
+          // let val = findMatch("userInfo", String(category));
           data[data.length - 1].question = questions["results"];
           //  if (val){
           //    val = parseInt(val);
